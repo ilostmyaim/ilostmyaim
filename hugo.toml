@@ -1,0 +1,62 @@
+baseURL = "https://ilostmyaim.com/"
+locale = "en-us"
+title = "iLostMyAim"
+theme = "PaperMod"
+paginate = 10
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[params]
+  description = "A personal tech, vlog, and DIY blog"
+  author = "iLostMyAim"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowBreadcrumbs = true
+  ShowPostNavLinks = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  ShowWordCounts = true
+  images = ["https://ilostmyaim.com/og-image.png"]
+  keywords = ["tech blog", "DIY", "PC building", "tech tutorials", "hardware reviews"]
+
+  [params.profileMode]
+    enabled = false
+
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "Welcome to iLostMyAim — a personal blog about tech, vlogs, and DIY projects."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hello@ilostmyaim.com"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+  posts = "/posts/:slug/"

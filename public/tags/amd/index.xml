@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AMD on iLostMyAim</title>
+    <link>http://localhost:1313/tags/amd/</link>
+    <description>Recent content in AMD on iLostMyAim</description>
+    <image>
+      <title>iLostMyAim</title>
+      <url>https://ilostmyaim.com/og-image.png</url>
+      <link>https://ilostmyaim.com/og-image.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Desktop PC from Spare Parts: Step-by-Step Guide</title>
+      <link>http://localhost:1313/posts/building-a-desktop-pc-from-spare-parts-step-by-step-guide/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/building-a-desktop-pc-from-spare-parts-step-by-step-guide/</guid>
+      <description>Learn how to build a desktop PC from spare parts with this step-by-step guide. Covers parts selection, assembly, and troubleshooting for budget builds.</description>
+    </item>
+  </channel>
+</rss>
