@@ -4,6 +4,13 @@ title = "iLostMyAim"
 theme = "PaperMod"
 paginate = 10
 
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.164.0"
+
 [taxonomies]
   tag = "tags"
   category = "categories"
