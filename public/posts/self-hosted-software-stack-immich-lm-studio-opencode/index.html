@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Self-Hosted Software Stack: Immich, LM Studio &amp; Opencode | iLostMyAim</title>
+<meta name="keywords" content="self-hosted software, self-hosted photo management, local AI models, self-hosted AI, Immich photo server, LM Studio local LLM, Opencode AI agent, privacy-first software">
+<meta name="description" content="Discover my self-hosted software stack: Immich for photo management, LM Studio for local AI, and Opencode for AI agents. All running on my own hardware.">
+<meta name="author" content="iLostMyAim">
+<link rel="canonical" href="http://localhost:1313/posts/self-hosted-software-stack-immich-lm-studio-opencode/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/self-hosted-software-stack-immich-lm-studio-opencode/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="iLostMyAim (Alt + H)">iLostMyAim</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Self-Hosted Software Stack: Immich, LM Studio &amp; Opencode
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-description">
+      Discover my self-hosted software stack: Immich for photo management, LM Studio for local AI, and Opencode for AI agents. All running on my own hardware.
+    </div>
+    <div class="post-meta">
+
+<span title='2026-07-12 00:00:00 +0000 UTC'>July 12, 2026</span>&nbsp;·&nbsp;<span>12 min</span>&nbsp;·&nbsp;<span>iLostMyAim</span>
+
+</div>
+  </header> <details class="toc"  open>
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#what-is-self-hosting-exactly" aria-label="What Is Self-Hosting, Exactly?">What Is Self-Hosting, Exactly?</a></li>
+            <li>
+                <a href="#why-self-hosting-actually-matters" aria-label="Why Self-Hosting Actually Matters">Why Self-Hosting Actually Matters</a><ul>
+                    
+            <li>
+                <a href="#your-privacy-is-yours" aria-label="Your Privacy Is Yours">Your Privacy Is Yours</a></li>
+            <li>
+                <a href="#no-more-subscription-fatigue" aria-label="No More Subscription Fatigue">No More Subscription Fatigue</a></li>
+            <li>
+                <a href="#no-vendor-lock-in" aria-label="No Vendor Lock-In">No Vendor Lock-In</a></li>
+            <li>
+                <a href="#full-control" aria-label="Full Control">Full Control</a></li>
+            <li>
+                <a href="#you-actually-own-your-data" aria-label="You Actually Own Your Data">You Actually Own Your Data</a></li></ul>
+            </li>
+            <li>
+                <a href="#real-world-examples-what-can-you-self-host" aria-label="Real-World Examples: What Can You Self-Host?">Real-World Examples: What Can You Self-Host?</a><ul>
+                    
+            <li>
+                <a href="#immich-your-own-google-photos" aria-label="Immich: Your Own Google Photos">Immich: Your Own Google Photos</a></li>
+            <li>
+                <a href="#lm-studio-ai-that-never-leaves-your-computer" aria-label="LM Studio: AI That Never Leaves Your Computer">LM Studio: AI That Never Leaves Your Computer</a></li>
+            <li>
+                <a href="#opencode-ai-agents-that-work-with-your-code" aria-label="Opencode: AI Agents That Work With Your Code">Opencode: AI Agents That Work With Your Code</a></li></ul>
+            </li>
+            <li>
+                <a href="#the-math-subscriptions-vs-self-hosting" aria-label="The Math: Subscriptions vs. Self-Hosting">The Math: Subscriptions vs. Self-Hosting</a></li>
+            <li>
+                <a href="#getting-started-for-absolute-beginners" aria-label="Getting Started (For Absolute Beginners)">Getting Started (For Absolute Beginners)</a><ul>
+                    
+            <li>
+                <a href="#you-dont-need-expensive-hardware" aria-label="You Don&rsquo;t Need Expensive Hardware">You Don&rsquo;t Need Expensive Hardware</a></li>
+            <li>
+                <a href="#start-with-one-thing" aria-label="Start With One Thing">Start With One Thing</a></li>
+            <li>
+                <a href="#the-communities-are-helpful" aria-label="The Communities Are Helpful">The Communities Are Helpful</a></li>
+            <li>
+                <a href="#many-tools-have-simple-installers-now" aria-label="Many Tools Have Simple Installers Now">Many Tools Have Simple Installers Now</a></li></ul>
+            </li>
+            <li>
+                <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><p>Think about where your photos live right now. Chances are, they&rsquo;re sitting on Google&rsquo;s servers, or maybe Apple&rsquo;s, or Amazon&rsquo;s. Your documents are in the cloud. Your AI conversations are being processed on servers you&rsquo;ve never seen, by companies you&rsquo;ve never met.</p>
+<p>You are renting your digital life.</p>
+<p>And like any rental, there are terms and conditions. They can change the price at any time. They can change what you&rsquo;re allowed to do. They can shut the whole thing down overnight. Remember Google Reader? Google Plus? You didn&rsquo;t own those services, and when they went, your data went with them.</p>
+<p>There is another way. It&rsquo;s called <strong>self-hosting</strong>, and it&rsquo;s simpler than you think.</p>
+<figure>
+    <img loading="lazy" src="featured-home-server-setup.webp"
+         alt="A small mini PC and Raspberry Pi sitting on a desk, representing a home server setup"/> <figcaption>
+            <p>A home server doesn&rsquo;t need to be big. A small mini PC or even a Raspberry Pi can host a surprising amount of your digital life.</p>
+        </figcaption>
+</figure>
+
+<h2 id="what-is-self-hosting-exactly">What Is Self-Hosting, Exactly?<a hidden class="anchor" aria-hidden="true" href="#what-is-self-hosting-exactly">#</a></h2>
+<p>Let me put it in the simplest terms I can: self-hosting means running software on hardware that you own, in a place you control.</p>
+<p>Instead of storing your photos on Google&rsquo;s servers, you store them on a small computer in your home. Instead of paying for ChatGPT Plus, you run an AI model on your own machine. Instead of relying on a company&rsquo;s document service, you run your own.</p>
+<p>You become your own IT department.</p>
+<p>Now, I know what some of you are thinking. &ldquo;I&rsquo;m not a programmer. I barely know how to use the command line.&rdquo; That&rsquo;s fine. The self-hosting world has changed dramatically in the last few years. Many of the best tools now have straightforward installers, friendly mobile apps, and active communities that will help you through the process. You do not need to be technical to get started.</p>
+<p>Think of it like the difference between renting an apartment and owning a house. When you rent, you pay every month, you can&rsquo;t paint the walls whatever color you want, and the landlord can sell the place out from under you. When you own, there&rsquo;s a one-time investment, and after that, it&rsquo;s yours. You decide what goes in it, how it&rsquo;s set up, and who gets to visit.</p>
+<p>The trade-offs look something like this:</p>
+<div class="mermaid">
+graph LR
+    subgraph CLOUD["Cloud / Subscription"]
+        CC["Cloud Services"]
+        C1["Monthly recurring fees"]
+        C2["Data on their servers"]
+        C3["Their terms &amp; conditions"]
+        C4["Their privacy policy"]
+        C5["Their uptime SLA"]
+        C6["Features they choose"]
+    end
+
+    subgraph HOME["Self-Hosted"]
+        HC["Your Server"]
+        H1["One-time hardware cost"]
+        H2["Data on your device"]
+        H3["Your rules"]
+        H4["Full data ownership"]
+        H5["You manage uptime"]
+        H6["You choose the stack"]
+    end
+
+    CC -.->|"vs"| HC
+
+    classDef cloud fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#1f2937
+    classDef home fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#1f2937
+    class CC,C1,C2,C3,C4,C5,C6,CLOUD cloud
+    class HC,H1,H2,H3,H4,H5,H6,HOME home
+</div>
+
+
+  
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.documentElement.classList.contains('dark') ? 'dark' : 'default',
+      securityLevel: 'loose'
+    });
+  </script>
+
+
+<h2 id="why-self-hosting-actually-matters">Why Self-Hosting Actually Matters<a hidden class="anchor" aria-hidden="true" href="#why-self-hosting-actually-matters">#</a></h2>
+<p>There are several reasons to consider making the switch, and they all come down to one thing: control.</p>
+<h3 id="your-privacy-is-yours">Your Privacy Is Yours<a hidden class="anchor" aria-hidden="true" href="#your-privacy-is-yours">#</a></h3>
+<p>When you use a free service, the old internet joke applies — if you&rsquo;re not paying for the product, you are the product. Companies scan your photos to build ad profiles. They analyze your emails to sell targeted advertising. They use your AI conversations to train their models. With self-hosting, none of that happens. Your data stays in your home. Period.</p>
+<p>Here&rsquo;s the practical difference in how your data moves:</p>
+<div class="mermaid">
+graph LR
+    subgraph CLOUD_FLOW["Cloud Model"]
+        CU["Your Device"] --> CI["Internet"]
+        CI --> CS["Cloud Provider"]
+        CS -->|"Processing &amp; Storage"| CI
+        CI --> CU
+    end
+
+    subgraph SELF_FLOW["Self-Hosted Model"]
+        SU["Your Device"] --> SN["Home LAN"]
+        SN --> SS["Your Server"]
+        SS -->|"Processing &amp; Storage"| SN
+        SN --> SU
+    end
+
+    classDef risk fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#1f2937
+    classDef safe fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#1f2937
+    class CI risk
+    class SN safe
+</div>
+
+
+
+<h3 id="no-more-subscription-fatigue">No More Subscription Fatigue<a hidden class="anchor" aria-hidden="true" href="#no-more-subscription-fatigue">#</a></h3>
+<p>Let&rsquo;s be honest: we are all drowning in subscriptions. A few years ago, you had one or two. Now it&rsquo;s streaming services, cloud storage, AI tools, password managers, note apps — the list goes on. Each one is &ldquo;only $10 a month,&rdquo; but they add up fast. Self-hosting replaces those recurring payments with a one-time hardware cost. After that, the only ongoing expense is electricity, and a small home server uses less power than your television.</p>
+<h3 id="no-vendor-lock-in">No Vendor Lock-In<a hidden class="anchor" aria-hidden="true" href="#no-vendor-lock-in">#</a></h3>
+<p>Companies shut down services all the time. Google Reader was gone in 2013. Google Plus followed in 2019. Various photo and video services have come and gone. When a service shuts down, your data goes with it — or at least, getting it back is a painful, limited-time export process. When you self-host, there is no one to shut it down but you. Your data is on your drives, in a format you can access, forever.</p>
+<h3 id="full-control">Full Control<a hidden class="anchor" aria-hidden="true" href="#full-control">#</a></h3>
+<p>You decide what software to run. You decide how to configure it. You decide who has access to your data. There are no surprise terms-of-service updates, no forced upgrades, no algorithmic feeds you didn&rsquo;t ask for. It works the way you want it to work, because you set it up that way.</p>
+<h3 id="you-actually-own-your-data">You Actually Own Your Data<a hidden class="anchor" aria-hidden="true" href="#you-actually-own-your-data">#</a></h3>
+<p>This is the big one. Your photos, your documents, your AI conversations, your notes — when they live on someone else&rsquo;s servers, they&rsquo;re technically theirs to manage, modify, or delete. When they live on your hardware, they&rsquo;re yours. Full stop.</p>
+<h2 id="real-world-examples-what-can-you-self-host">Real-World Examples: What Can You Self-Host?<a hidden class="anchor" aria-hidden="true" href="#real-world-examples-what-can-you-self-host">#</a></h2>
+<p>Talking about control and privacy is one thing. Let&rsquo;s get concrete. Here are three tools I use (or recommend) that replace popular subscription services, and they&rsquo;re all free and open-source.</p>
+<h3 id="immich-your-own-google-photos">Immich: Your Own Google Photos<a hidden class="anchor" aria-hidden="true" href="#immich-your-own-google-photos">#</a></h3>
+<p>If you have a smartphone, you probably have thousands of photos backed up to Google Photos, iCloud, or some other service. Immich is an open-source, self-hosted alternative that replaces that entire workflow.</p>
+<figure>
+    <img loading="lazy" src="immich-mobile-app.webp"
+         alt="Immich mobile app showing automatic photo backup interface"/> <figcaption>
+            <p>Immich&rsquo;s mobile app provides automatic photo and video backup, just like Google Photos — but your data stays on your own server.</p>
+        </figcaption>
+</figure>
+
+<p>Here&rsquo;s why it&rsquo;s impressive:</p>
+<ul>
+<li><strong>Mobile apps for Android and iOS</strong> — Install the app, sign in, and it automatically backs up your photos and videos in the background, just like Google Photos does.</li>
+<li><strong>Face recognition</strong> — Immich can identify people in your photos and group them together, making it easy to find all the pictures of a specific person.</li>
+<li><strong>Map view</strong> — See your photos plotted on a map based on their GPS metadata, just like Google Photos.</li>
+<li><strong>Sharing albums</strong> — Create shareable albums and send links to friends and family.</li>
+<li><strong>Search</strong> — Search through your library by date, location, people, and more.</li>
+<li><strong>Unlimited storage</strong> — You&rsquo;re limited only by your own hard drives. No &ldquo;storage full&rdquo; messages, no compression, no upsell pop-ups.</li>
+</ul>
+<p>Immich is open-source under the AGPL v3 license. It runs on Docker, which is a container technology that makes it easy to install and update. You&rsquo;ll need a machine with at least 6GB of RAM and 2 CPU cores. That&rsquo;s it. An old laptop, a cheap mini PC, or even a Raspberry Pi 5 can handle it.</p>
+<blockquote>
+<p><strong>Note:</strong> Immich is still actively developed and improving rapidly. It&rsquo;s one of the most popular self-hosted photo projects on GitHub for a reason. If you&rsquo;ve been frustrated with Google Photos&rsquo; storage limits and upsells, this is the alternative to look at first.</p>
+</blockquote>
+<p>Link: <a href="https://immich.app">immich.app</a></p>
+<h3 id="lm-studio-ai-that-never-leaves-your-computer">LM Studio: AI That Never Leaves Your Computer<a hidden class="anchor" aria-hidden="true" href="#lm-studio-ai-that-never-leaves-your-computer">#</a></h3>
+<p>AI is everywhere now, and most people access it through services like ChatGPT, Claude, or Gemini. Those are great tools, but your conversations go to their servers. Someone, somewhere, could potentially read them. They&rsquo;re used to train models. They&rsquo;re subject to the company&rsquo;s policies and terms of service.</p>
+<p>LM Studio lets you run powerful AI language models entirely on your own computer. No API calls. No subscriptions. No one reading your conversations.</p>
+<figure>
+    <img loading="lazy" src="lm-studio-desktop.webp"
+         alt="LM Studio desktop application showing a local AI model loaded and ready for chat"/> <figcaption>
+            <p>LM Studio&rsquo;s clean interface makes it easy to download, load, and chat with AI models that run entirely on your machine.</p>
+        </figcaption>
+</figure>
+
+<p>Here&rsquo;s what you need to know:</p>
+<ul>
+<li><strong>Free for home and work use</strong> — There is no subscription. Download it, use it, done.</li>
+<li><strong>Runs on Windows, Mac, and Linux</strong> — No special setup required. It&rsquo;s a regular desktop application.</li>
+<li><strong>Supports many models</strong> — Qwen, DeepSeek, Gemma, Llama, and dozens of others. You can pick the model that fits your hardware and your use case.</li>
+<li><strong>Everything stays local</strong> — Your prompts, your responses, your files — nothing leaves your computer. Not ever.</li>
+<li><strong>Surprisingly capable</strong> — Modern local models are genuinely useful. They can help you write, brainstorm, summarize documents, debug code, and much more. The quality gap between local models and cloud services has narrowed dramatically.</li>
+</ul>
+<p>The flow is straightforward:</p>
+<div class="mermaid">
+graph TD
+    A["You type a prompt"] --> B["LM Studio receives it"]
+    B --> C["Local model processes it"]
+    C --> D["Response returned to you"]
+    D -->|"Next prompt"| A
+
+    subgraph LOCAL["All on your machine"]
+        B
+        C
+        D
+    end
+
+    E["No internet required"] -.-> C
+    F["Uses your GPU or CPU"] -.-> C
+    G["Models downloaded once, used forever"] -.-> C
+
+    classDef local fill:#d1fae5,stroke:#10b981,stroke-width:2px,color:#1f2937
+    classDef note fill:#fef3c7,stroke:#f59e0b,stroke-width:1px,stroke-dasharray: 5 5,color:#1f2937
+    class LOCAL local
+    class E,F,G note
+</div>
+
+
+
+<p>The main trade-off is that local AI depends on your hardware. A more powerful computer with a good GPU will run larger, more capable models. But even a modest laptop can run useful models. LM Studio will tell you which models are compatible with your system, so there&rsquo;s no guesswork.</p>
+<p>Link: <a href="https://lmstudio.ai">lmstudio.ai</a></p>
+<h3 id="opencode-ai-agents-that-work-with-your-code">Opencode: AI Agents That Work With Your Code<a hidden class="anchor" aria-hidden="true" href="#opencode-ai-agents-that-work-with-your-code">#</a></h3>
+<p>If you&rsquo;re a developer or someone who works with code, there&rsquo;s another layer you can add: local AI agents.</p>
+<p>Opencode is a project that lets you run AI agents locally. These agents can help you with coding tasks, research, writing, and more — but they use the local language models you have running on your own machine. Your code, your documents, your projects — everything stays on your computer.</p>
+<p>This matters if you work with private code, proprietary projects, or anything you wouldn&rsquo;t want sent to a cloud service. With a local AI agent, there&rsquo;s nothing to send. The model processes your files locally, understands your codebase, and helps you work — all without a single byte of data leaving your machine.</p>
+<p>Here&rsquo;s what the workflow looks like in practice:</p>
+<div class="mermaid">
+graph TD
+    A["You give a task"] --> B["Agent breaks it into steps"]
+    B --> TC
+
+    subgraph TOOLS["Agent uses tools"]
+        TC["Tools"]
+        T1["Read files"]
+        T2["Run commands"]
+        T3["Edit code"]
+        T4["Search codebase"]
+    end
+
+    TC --> C["Agent assembles results"]
+    C --> D["You review &amp; approve"]
+    D -->|"Needs changes"| B
+    D -->|"Looks good"| E["Done"]
+
+    F["Powered by your local LM Studio model"] -.-> B
+    G["No code leaves your machine"] -.-> TC
+
+    classDef step fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1f2937
+    classDef tool fill:#f3e8ff,stroke:#8b5cf6,stroke-width:2px,color:#1f2937
+    classDef note fill:#fef3c7,stroke:#f59e0b,stroke-width:1px,stroke-dasharray: 5 5,color:#1f2937
+    class A,B,C,D,E step
+    class TC,T1,T2,T3,T4,TOOLS tool
+    class F,G note
+</div>
+
+
+
+<blockquote>
+<p><strong>Tip:</strong> If you&rsquo;re new to self-hosting and also new to local AI, I&rsquo;d recommend starting with LM Studio first. Get comfortable running models locally, then explore agent frameworks like Opencode once you have the basics down.</p>
+</blockquote>
+<h2 id="the-math-subscriptions-vs-self-hosting">The Math: Subscriptions vs. Self-Hosting<a hidden class="anchor" aria-hidden="true" href="#the-math-subscriptions-vs-self-hosting">#</a></h2>
+<p>Let&rsquo;s talk numbers, because this is where self-hosting really starts to make sense.</p>
+<p>Here&rsquo;s a typical subscription stack for someone who uses cloud services and AI tools regularly:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Service</th>
+					<th>Monthly Cost</th>
+					<th>Annual Cost</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Google One 2TB</td>
+					<td>~$10</td>
+					<td>~$100</td>
+			</tr>
+			<tr>
+					<td>ChatGPT Plus</td>
+					<td>~$20</td>
+					<td>~$240</td>
+			</tr>
+			<tr>
+					<td>Additional cloud storage, apps, tools</td>
+					<td>~$10-20</td>
+					<td>~$120-240</td>
+			</tr>
+			<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>~$30-40</strong></td>
+					<td><strong>~$360-580</strong></td>
+			</tr>
+	</tbody>
+</table>
+<p>That&rsquo;s $340 to $460 per year. Over a decade, that&rsquo;s <strong>$3,400 to $4,600</strong>.</p>
+<p>Now compare that to self-hosting:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Item</th>
+					<th>Cost</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Mini PC (used or budget new)</td>
+					<td>$150-300</td>
+			</tr>
+			<tr>
+					<td>External hard drive (for photos and data)</td>
+					<td>$50-100</td>
+			</tr>
+			<tr>
+					<td>Electricity (rough estimate)</td>
+					<td>~$15-30/year</td>
+			</tr>
+			<tr>
+					<td><strong>Total first year</strong></td>
+					<td><strong>~$215-430</strong></td>
+			</tr>
+			<tr>
+					<td><strong>Each year after</strong></td>
+					<td><strong>~$15-30 (electricity only)</strong></td>
+			</tr>
+	</tbody>
+</table>
+<p>The payback period is less than a year. After that, you&rsquo;re spending a fraction of what you would on subscriptions. Over a decade, you&rsquo;re saving thousands.</p>
+<p>And that&rsquo;s not even counting the privacy, control, and data ownership benefits, which don&rsquo;t show up on a spreadsheet but are arguably worth more than the money.</p>
+<figure>
+    <img loading="lazy" src="home-server-mini-pc.webp"
+         alt="A compact home server setup with a mini PC, external drives, and a Raspberry Pi on a shelf"/> <figcaption>
+            <p>A complete home server setup doesn&rsquo;t take up much space. This kind of setup can host photo backup, local AI, and more.</p>
+        </figcaption>
+</figure>
+
+<h2 id="getting-started-for-absolute-beginners">Getting Started (For Absolute Beginners)<a hidden class="anchor" aria-hidden="true" href="#getting-started-for-absolute-beginners">#</a></h2>
+<p>If you&rsquo;ve read this far and you&rsquo;re interested but not sure where to begin, here&rsquo;s my advice:</p>
+<h3 id="you-dont-need-expensive-hardware">You Don&rsquo;t Need Expensive Hardware<a hidden class="anchor" aria-hidden="true" href="#you-dont-need-expensive-hardware">#</a></h3>
+<p>This is the most important thing to understand. You do not need a $2,000 server. You do not need a dedicated room full of equipment. You do not need to be a Linux expert.</p>
+<p>An old laptop that you&rsquo;re not using anymore works. A Raspberry Pi works. A cheap mini PC from a used electronics marketplace works. Start with what you have.</p>
+<p>I actually run all of this on the desktop I built from spare parts — you can read about that <a href="/posts/build-desktop-pc-from-spare-parts/">build here</a>. The Ryzen 5 1600 and GTX 1080 Ti handle Docker containers and local AI inference without breaking a sweat.</p>
+<h3 id="start-with-one-thing">Start With One Thing<a hidden class="anchor" aria-hidden="true" href="#start-with-one-thing">#</a></h3>
+<p>Don&rsquo;t try to self-host everything at once. Pick one service that you use every day and that frustrates you the most. For most people, that&rsquo;s photo backup. Start with Immich. Get it running. Use it for a week. See how it feels.</p>
+<p>Once you&rsquo;re comfortable with one thing, add another. Maybe it&rsquo;s a local AI setup with LM Studio. Maybe it&rsquo;s a self-hosted note-taking app. Build your self-hosted ecosystem gradually.</p>
+<h3 id="the-communities-are-helpful">The Communities Are Helpful<a hidden class="anchor" aria-hidden="true" href="#the-communities-are-helpful">#</a></h3>
+<p>Every self-hosted project has a community — usually on Discord, Reddit, or GitHub Discussions. These communities are full of people who remember what it was like to be beginners. They will help you troubleshoot, answer your questions, and walk you through the process. Don&rsquo;t be afraid to ask for help.</p>
+<h3 id="many-tools-have-simple-installers-now">Many Tools Have Simple Installers Now<a hidden class="anchor" aria-hidden="true" href="#many-tools-have-simple-installers-now">#</a></h3>
+<p>The days of needing to manually edit configuration files and run complex command-line scripts are largely over. Many self-hosted tools now offer one-click installers, Docker-based setups, or even desktop applications (like LM Studio). The barrier to entry has never been lower.</p>
+<blockquote>
+<p><strong>Note:</strong> Docker is a technology that packages software into containers, making it easy to install, run, and update. If you hear &ldquo;Docker&rdquo; mentioned in self-hosting tutorials, don&rsquo;t panic. It&rsquo;s just a tool that makes things easier. There are beginner-friendly guides for installing Docker on Windows, Mac, and Linux.</p>
+</blockquote>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Self-hosting isn&rsquo;t about being paranoid or anti-technology. It&rsquo;s about taking control of your digital life in a world where more and more of it is hosted on servers you don&rsquo;t own, by companies you don&rsquo;t control.</p>
+<p>The journey from renting to owning doesn&rsquo;t happen overnight. It starts with one small step — maybe it&rsquo;s installing Immich to back up your photos, or maybe it&rsquo;s trying LM Studio to chat with a local AI model. That one step teaches you something, and then you take another.</p>
+<p>Before you know it, you have a small computer in your home running services that you control, with data that you own, without monthly fees or terms of service surprises. And there is a real, genuine satisfaction in that. It&rsquo;s similar to the feeling I get when I build a PC from spare parts — you put something together with your own hands, it works, and it&rsquo;s yours.</p>
+<p>Your digital life is worth owning. Start with one thing, and see where it takes you.</p>
+<hr>
+<p><em>If this post was helpful, I&rsquo;d love to hear what you&rsquo;re thinking about self-hosting first. Drop a comment or reach out — I&rsquo;m always happy to chat about home servers, local AI, and taking back control of our digital lives.</em></p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Self-Hosted Software Stack: Immich, LM Studio & Opencode",
+  "description": "Discover my self-hosted software stack: Immich for photo management, LM Studio for local AI, and Opencode for AI agents. All running on my own hardware.",
+  "author": {
+    "@type": "Person",
+    "name": "iLostMyAim",
+    "url": "https://blog.ilostmyaim.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "iLostMyAim",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ilostmyaim.com/og-image.png"
+    }
+  },
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-12",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.ilostmyaim.com/posts/self-hosting-your-digital-life/"
+  }
+}
+</script>
+
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/self-hosting/">Self-Hosting</a></li>
+      <li><a href="http://localhost:1313/tags/tutorial/">Tutorial</a></li>
+      <li><a href="http://localhost:1313/tags/immich/">Immich</a></li>
+      <li><a href="http://localhost:1313/tags/lm-studio/">LM Studio</a></li>
+      <li><a href="http://localhost:1313/tags/opencode/">Opencode</a></li>
+      <li><a href="http://localhost:1313/tags/local-ai/">Local AI</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/privacy/">Privacy</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/building-a-desktop-pc-from-spare-parts-step-by-step-guide/">
+    <span class="title">Next »</span>
+    <span>Building a Desktop PC from Spare Parts: Step-by-Step Guide</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">iLostMyAim</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home Server on iLostMyAim</title>
+    <link>http://localhost:1313/tags/home-server/</link>
+    <description>Recent content in Home Server on iLostMyAim</description>
+    <image>
+      <title>iLostMyAim</title>
+      <url>https://ilostmyaim.com/og-image.png</url>
+      <link>https://ilostmyaim.com/og-image.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/home-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-Hosting Your Digital Life: Stop Renting, Start Owning</title>
+      <link>http://localhost:1313/posts/self-hosting-your-digital-life-stop-renting-start-owning/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/self-hosting-your-digital-life-stop-renting-start-owning/</guid>
+      <description>Self-hosting lets you run your own software on your own hardware at home. Learn how to replace subscriptions with one-time investments using tools like Immich, LM Studio, and Opencode.</description>
+    </item>
+  </channel>
+</rss>

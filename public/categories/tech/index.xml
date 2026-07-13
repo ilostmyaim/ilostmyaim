@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-Hosted Software Stack: Immich, LM Studio &amp; Opencode</title>
+      <link>http://localhost:1313/posts/self-hosted-software-stack-immich-lm-studio-opencode/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/self-hosted-software-stack-immich-lm-studio-opencode/</guid>
+      <description>Discover my self-hosted software stack: Immich for photo management, LM Studio for local AI, and Opencode for AI agents. All running on my own hardware.</description>
+    </item>
     <item>
       <title>Building a Desktop PC from Spare Parts: Step-by-Step Guide</title>
       <link>http://localhost:1313/posts/building-a-desktop-pc-from-spare-parts-step-by-step-guide/</link>
