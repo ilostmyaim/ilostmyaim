@@ -24,7 +24,7 @@ And like any rental, there are terms and conditions. They can change the price a
 
 There is another way. It's called **self-hosting**, and it's simpler than you think.
 
-{{< figure src="featured-home-server-setup.webp" alt="A small mini PC and Raspberry Pi sitting on a desk, representing a home server setup" caption="A home server doesn't need to be big. A small mini PC or even a Raspberry Pi can host a surprising amount of your digital life." >}}
+{{< figure src="mini-pc-rasp-pi.jpg" alt="A small mini PC and Raspberry Pi sitting on a desk, representing a home server setup" caption="A home server doesn't need to be big. A small mini PC or even a Raspberry Pi can host a surprising amount of your digital life." >}}
 
 ## What Is Self-Hosting, Exactly?
 
@@ -126,7 +126,7 @@ Talking about control and privacy is one thing. Let's get concrete. Here are thr
 
 If you have a smartphone, you probably have thousands of photos backed up to Google Photos, iCloud, or some other service. Immich is an open-source, self-hosted alternative that replaces that entire workflow.
 
-{{< figure src="immich-mobile-app.webp" alt="Immich mobile app showing automatic photo backup interface" caption="Immich's mobile app provides automatic photo and video backup, just like Google Photos — but your data stays on your own server." >}}
+{{< figure src="immich-automatic-backup-mobile.jpg" alt="Immich mobile app showing automatic photo backup interface" caption="Immich's mobile app provides automatic photo and video backup, just like Google Photos — but your data stays on your own server." >}}
 
 Here's why it's impressive:
 
@@ -149,7 +149,7 @@ AI is everywhere now, and most people access it through services like ChatGPT, C
 
 LM Studio lets you run powerful AI language models entirely on your own computer. No API calls. No subscriptions. No one reading your conversations.
 
-{{< figure src="lm-studio-desktop.webp" alt="LM Studio desktop application showing a local AI model loaded and ready for chat" caption="LM Studio's clean interface makes it easy to download, load, and chat with AI models that run entirely on your machine." >}}
+{{< figure src="lmstudio-screenshot.jpg" alt="LM Studio desktop application showing a local AI model loaded and ready for chat" caption="LM Studio's clean interface makes it easy to download, load, and chat with AI models that run entirely on your machine." >}}
 
 Here's what you need to know:
 
@@ -258,7 +258,7 @@ The payback period is less than a year. After that, you're spending a fraction o
 
 And that's not even counting the privacy, control, and data ownership benefits, which don't show up on a spreadsheet but are arguably worth more than the money.
 
-{{< figure src="home-server-mini-pc.webp" alt="A compact home server setup with a mini PC, external drives, and a Raspberry Pi on a shelf" caption="A complete home server setup doesn't take up much space. This kind of setup can host photo backup, local AI, and more." >}}
+{{< figure src="home-server-mini-pc.jpg" alt="A compact home server setup with a mini PC, external drives, and a Raspberry Pi on a shelf" caption="A complete home server setup doesn't take up much space. This kind of setup can host photo backup, local AI, and more." >}}
 
 ## Getting Started (For Absolute Beginners)
 

@@ -75,7 +75,7 @@ The AMD Ryzen 5 1600 uses the AM4 socket. Here's how to install it:
 
 > **Important BIOS note:** The B350 chipset originally launched before the Ryzen 1600 (Summit Ridge) was released. This means the motherboard's BIOS almost certainly needs an update before it will recognize the CPU. The MSI B350M Mortar Arctic does **not** support USB BIOS Flashback, so you'll need a compatible older CPU (such as a Ryzen 3 1200 or Ryzen 5 1400) to perform the update. Install that CPU first, flash the BIOS via M-Flash in the BIOS menu, then swap in the Ryzen 5 1600. If you don't have access to an older CPU, you may need to borrow one or look for a board that supports CPU-less BIOS updates.
 
-{{< figure src="step-02-cpu-installed.jpg" alt="AMD Ryzen 5 1600 installed in AM4 socket on MSI B350M Mortar Arctic motherboard" caption="Ryzen 5 1600 seated in the AM4 socket. Note the alignment triangle." >}}
+{{< figure src="step-02-cpu-installed.jpg" alt="AMD Ryzen 5 1600 installed in AM4 socket on MSI B350M Mortar Arctic motherboard" caption="Ryzen 5 1600 seated in the AM4 socket." >}}
 
 ### Step 2b: Install the CPU Cooler
 
@@ -111,7 +111,7 @@ The Samsung 970 EVO 500GB is an NVMe M.2 SSD, which plugs directly into the moth
 
 > **Why the heatsink matters:** The Samsung 970 EVO is known to run warm under sustained loads — it can easily hit 60-70°C without cooling. The B350M Mortar Arctic's built-in M.2 heatsink is a welcome feature here. It keeps temperatures in check and prevents thermal throttling, which would otherwise reduce your SSD's performance.
 
-{{< figure src="step-03-ram-and-ssd.jpg" alt="Corsair Vengeance RAM sticks and Samsung 970 EVO SSD installed on motherboard" caption="Both RAM sticks in DIMM slots and the NVMe SSD secured with the M.2 heatsink." >}}
+{{< figure src="step-03-install-nvme-and-ram.jpg" alt="Corsair Vengeance RAM sticks and Samsung 970 EVO SSD installed on motherboard" caption="Both RAM sticks in DIMM slots and the NVMe SSD secured with the M.2 heatsink." >}}
 
 ### Step 5: Mount Motherboard in Case
 
@@ -123,8 +123,6 @@ With the CPU, cooler, RAM, and SSD installed, it's time to put the motherboard i
 4. Secure the motherboard with the provided screws. Don't overtighten — snug is enough.
 
 The white PCB of the B350M Mortar Arctic looks really clean inside the Define Mini C. This case is all about understated, clean design, and the Arctic board fits right in.
-
-{{< figure src="step-04-mobo-in-case.jpg" alt="MSI B350M Mortar Arctic motherboard installed in Fractal Design Define Mini C case" caption="The white Arctic motherboard contrasts nicely inside the Define Mini C." >}}
 
 ### Step 6: Install PSU
 
@@ -152,7 +150,7 @@ The GTX 1080 Ti is a long card at approximately 268mm (about 10.5 inches). The D
 
 > **Double-check the length:** Before installing, it never hurts to physically measure. Lay the GPU alongside the case interior to confirm it fits. The Define Mini C is compact, and while 268mm is well within the 310mm limit, it's close enough that verifying gives you peace of mind.
 
-{{< figure src="step-05-gpu-installed.jpg" alt="GTX 1080 Ti graphics card installed in PCIe slot" caption="The GTX 1080 Ti seated in the primary PCIe x16 slot." >}}
+{{< figure src="step-04-install-gpu.jpg" alt="GTX 1080 Ti graphics card installed in PCIe slot" caption="The GTX 1080 Ti seated in the primary PCIe x16 slot." >}}
 
 ### Step 8: Cable Management and Connections
 
@@ -193,7 +191,7 @@ In the BIOS, I recommend doing the following:
 - **Verify boot order** — Make sure the Samsung 970 EVO is set as the primary boot device.
 - **Update BIOS** — If you skipped the BIOS update earlier (because you didn't have an older CPU handy), you can update it now via M-Flash using a USB drive.
 
-{{< figure src="step-06-final-build.jpg" alt="Completed PC build with all components installed and cables managed" caption="The finished build, ready for first boot!" >}}
+{{< figure src="step-05-final-build.jpg" alt="Completed PC build with all components installed and cables managed" caption="The finished build, ready for first boot!" >}}
 
 ## Post-Build: OS, Drivers, and First Impressions
 
