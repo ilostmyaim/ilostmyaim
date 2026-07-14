@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Xbox Controller on iLostMyAim</title>
+    <link>http://localhost:1313/tags/xbox-controller/</link>
+    <description>Recent content in Xbox Controller on iLostMyAim</description>
+    <image>
+      <title>iLostMyAim</title>
+      <url>https://ilostmyaim.com/og-image.png</url>
+      <link>https://ilostmyaim.com/og-image.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/xbox-controller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steam Controller 2026 Review vs Xbox, PS5 &amp; 8BitDo</title>
+      <link>http://localhost:1313/posts/steam-controller-2026-review-vs-xbox-ps5-8bitdo/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/steam-controller-2026-review-vs-xbox-ps5-8bitdo/</guid>
+      <description>Hands-on review of Valve&amp;#39;s 2026 Steam Controller. We compare it against Xbox, PS5 DualSense, and 8BitDo controllers — plus 5 games it shines in.</description>
+    </item>
+  </channel>
+</rss>

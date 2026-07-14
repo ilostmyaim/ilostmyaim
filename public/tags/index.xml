@@ -11,8 +11,57 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>8BitDo</title>
+      <link>http://localhost:1313/tags/8bitdo/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/8bitdo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Controller Review</title>
+      <link>http://localhost:1313/tags/controller-review/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/controller-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaming Hardware</title>
+      <link>http://localhost:1313/tags/gaming-hardware/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gaming-hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PC Gaming</title>
+      <link>http://localhost:1313/tags/pc-gaming/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pc-gaming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Steam Controller</title>
+      <link>http://localhost:1313/tags/steam-controller/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/steam-controller/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Valve</title>
+      <link>http://localhost:1313/tags/valve/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/valve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xbox Controller</title>
+      <link>http://localhost:1313/tags/xbox-controller/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/xbox-controller/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Docker</title>
       <link>http://localhost:1313/tags/docker/</link>

@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steam Controller 2026 Review vs Xbox, PS5 &amp; 8BitDo</title>
+      <link>http://localhost:1313/posts/steam-controller-2026-review-vs-xbox-ps5-8bitdo/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/steam-controller-2026-review-vs-xbox-ps5-8bitdo/</guid>
+      <description>Hands-on review of Valve&amp;#39;s 2026 Steam Controller. We compare it against Xbox, PS5 DualSense, and 8BitDo controllers — plus 5 games it shines in.</description>
+    </item>
     <item>
       <title>Self-Hosted Software Stack: Immich, LM Studio &amp; Opencode</title>
       <link>http://localhost:1313/posts/self-hosted-software-stack-immich-lm-studio-opencode/</link>
