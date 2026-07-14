@@ -15,6 +15,7 @@ TocOpen: true
 robotsNoIndex: false
 ---
 
+
 Think about where your photos live right now. Chances are, they're sitting on Google's servers, or maybe Apple's, or Amazon's. Your documents are in the cloud. Your AI conversations are being processed on servers you've never seen, by companies you've never met.
 
 You are renting your digital life.
