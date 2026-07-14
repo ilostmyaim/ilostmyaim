@@ -3,7 +3,7 @@ title: "Self-Hosted Software Stack: Immich, LM Studio & Opencode"
 subtitle: "How I run my own photo library, local AI models, and AI agents on hardware I already own"
 date: 2026-07-12
 lastmod: 2026-07-12
-draft: true
+draft: false
 author: "iLostMyAim"
 description: "Discover my self-hosted software stack: Immich for photo management, LM Studio for local AI, and Opencode for AI agents. All running on my own hardware."
 tags: ["Self-Hosting", "Tutorial", "Immich", "LM Studio", "Opencode", "Local AI", "Docker", "Privacy"]
