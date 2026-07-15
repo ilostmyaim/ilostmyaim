@@ -1,6 +1,6 @@
 baseURL = "https://blog.ilostmyaim.com/"
 locale = "en-us"
-title = "iLostMyAim"
+title = "ilostmyaim"
 theme = "PaperMod"
 paginate = 10
 
@@ -22,7 +22,7 @@ paginate = 10
 
 [params]
   description = "A personal tech, vlog, and DIY blog"
-  author = "iLostMyAim"
+  author = "ilostmyaim"
   defaultTheme = "dark"
   ShowReadingTime = true
   ShowBreadcrumbs = true
