@@ -16,6 +16,7 @@ robotsNoIndex: false
 ---
 
 ## A Lazy July Afternoon with a New Controller
+{{< figure src="steamcontroller-packaging.JPG" alt="Packaging" caption="Finally, it is here! Packaging of the new 2026 Steam Controller was minimalist, but still sturdy. It arrived intact in its box.">}}
 
 It's mid-July 2026. The fan on my desk is humming softly, there's a glass of iced something on the coaster, and I've got a brand-new controller in my hands. Not just any controller — Valve's 2026 Steam Controller, the one they dropped back in May and I've been meaning to sit down with properly ever since.
 
@@ -51,9 +52,11 @@ For €99, the materials feel premium. The matte finish resists fingerprints rea
 
 Is it the most beautiful controller I've ever held? No. But it doesn't need to be. It's a tool, and it's a well-made one. It pairs nicely with [the desktop I built from spare parts](/posts/build-desktop-pc-from-spare-parts/) — this whole setup feels made for long, relaxed gaming sessions.
 
+{{< figure src="steamcontroller-front-facing.JPG" alt="Front side of the new 2026 Steam Controller."  caption="Front side of the new 2026 Steam Controller. Trackpads are there giving Steamdeck vibes.">}}
+
 ## Steam Controller vs. Xbox Wireless Controller
 
-Let's start with the obvious comparison. The Xbox Wireless Controller is the default. It's the controller that every PC gamer knows, that every game supports out of the box, and that you can buy at pretty much any store on the planet for around $60.
+Let's start with the obvious comparison. The Xbox Wireless Controller is the default. It's the controller that every PC gamer knows, that every game supports out of the box, and that you can buy at pretty much any store on the planet for around €60.
 
 The Xbox controller is the reliable workhorse. It's familiar, comfortable, and universally compatible. You plug it in or pair it via Bluetooth, and it just works. There's nothing particularly exciting about it, and that's exactly the point.
 
@@ -63,6 +66,10 @@ The Steam Controller's superpower is Steam Input. That's Valve's controller conf
 
 The trackpad is the big differentiator. For strategy games, menu navigation, and even FPS aim assist in casual modes, having a precision pointing surface built into your controller is genuinely useful.
 
+{{< figure src="steamcontroller-puck.JPG" alt="Steam controller 2026 puck."  caption="Steam controller 2026 puck is used for charging the controller via its three pins seen in the picture. It can also act as a wireless receiver for the controller, offering superior connectivity compared to Bluetooth. However both bluetooth and wired (USB) connections are also available for the Steam Controller.">}}
+
+
+
 **The real question:** Do you want universal compatibility, or do you want Steam-native features?
 
 If you play across multiple platforms, use emulators, or jump between Epic, GOG, and Steam regularly, the Xbox controller is the safer bet. If you live in Steam — Big Picture mode, Remote Play, the whole ecosystem — the Steam Controller gives you a richer experience.
@@ -71,7 +78,7 @@ If you play across multiple platforms, use emulators, or jump between Epic, GOG,
 
 The DualSense is Sony's answer to "what if a controller could feel more alive?" And honestly, it delivers. The adaptive triggers — where the L2 and R2 buttons vary their resistance depending on what you're doing in-game — are genuinely impressive. Pulling a taut bowstring feels different from pressing a light trigger. The haptic feedback system, using dual actuators instead of traditional rumble motors, gives you nuanced vibrations you can actually distinguish from each other.
 
-At around $70, the DualSense is also cheaper than the Steam Controller. It works on PS5, PC, Mac, and even mobile. USB-C rechargeable, plenty of color options, and it looks great.
+At around €70, the DualSense is also cheaper than the Steam Controller. It works on PS5, PC, Mac, and even mobile. USB-C rechargeable, plenty of color options, and it looks great.
 
 **Where the Steam Controller holds its own:**
 
@@ -83,7 +90,7 @@ If you play on PS5 and PC, the DualSense is the obvious choice. One controller f
 
 ## Steam Controller vs. 8BitDo
 
-8BitDo has carved out a really nice niche. Their controllers — the Ultimate series, the Pro 2, the Pro 3, the Arcade Controller Pro — range from about $50 to $70 and offer a lot of value. Retro aesthetics, multi-platform support (Switch, PC, mobile, Android), USB-C charging, and in some cases, compact designs that are great for travel.
+8BitDo has carved out a really nice niche. Their controllers — the Ultimate series, the Pro 2, the Pro 3, the Arcade Controller Pro — range from about €50 to €70 and offer a lot of value. Retro aesthetics, multi-platform support (Switch, PC, mobile, Android), USB-C charging, and in some cases, compact designs that are great for travel.
 
 8BitDo controllers feel like they were made by people who love retro gaming and want to bring that experience to modern platforms. They're charming, they're affordable, and they work across pretty much everything.
 
@@ -95,15 +102,21 @@ If you're a retro gamer, a Switch player, or someone who wants a compact control
 
 Neither is "better." They're just different.
 
+{{< figure src="front-of-the-controllers.JPG" alt="Steam controller 2026, 8BitDo Ultimate and Xbox Wireless controller."  caption="Steam controller 2026, 8BitDo Ultimate and Xbox Wireless hanging out on a table.">}}
+
+
 ## Quick Comparison
 
 | Feature | Steam Controller (2026) | Xbox Wireless | DualSense (PS5) | 8BitDo Ultimate |
-|---------|------------------------|---------------|-----------------|-----------------|
-| Price | €99 (~$109) | ~$60 | ~$70 | ~$70 |
+|---------|------------------------|--------------|----------------|----------------|
+| Price | €99 (~$109) | ~€60 | ~€70 | ~€70 |
 | Platform Focus | Steam / PC | Universal | PS5 / PC / Mobile | Multi-platform |
 | Unique Feature | Trackpad + Steam Input | Universal compatibility | Adaptive triggers + haptics | Retro design + value |
 | Battery | USB-C rechargeable | AA / rechargeable pack | USB-C rechargeable | USB-C rechargeable |
 | Best For | Steam ecosystem users | Everyone, everywhere | PS5 + PC hybrid users | Retro / budget gamers |
+
+{{< figure src="back-of-the-controllers.JPG" alt="Back side of the three controllers" caption="Back side of the three controllers. As can be seen 8BitDo Ultimate has two back buttons, while the Steam Controller has 4 of them. That is a nice addition by Valve considering the price premium paid in comparison to the other controllers.">}}
+
 
 ## The Bigger Picture: Controllers in a Shortage Era
 
@@ -116,18 +129,20 @@ Between 2025 and 2026, the AI boom has created unprecedented demand for RAM and 
 Valve's own production pace hasn't helped. The Steam Controller isn't a mass-market product in the same way the Xbox controller is, so supply has been limited from day one. If you're interested in one, you may need to be patient. Check the Steam store periodically, and don't be surprised if you have to wait a few weeks.
 
 This shortage context is also worth keeping in mind when evaluating that €99 price tag. Part of what you're paying for is the fact that these things aren't sitting on every store shelf.
+{{< figure src="steamcontroller-bumpers-and-triggers.JPG" alt="Bumpers and triggers of the Steam Controller" caption="Bumpers and triggers of the Steam Controller are nice and soft. Especially the triggers are less clicky compared to the Xbox Wireless controller or the 8BitDo Ultimate. Hence, they are also quieter.">}}
+
 
 ## 5 Games to Play This Summer
 
 Summer is the season for playing games, not benchmarking them. Here are five titles that pair especially well with the Steam Controller, whether it's the trackpad, the Steam Input profiles, or just the general couch-gaming vibe that makes them shine.
 
-| Game | Genre | Price | Summer Vibe |
-|------|-------|-------|-------------|
-| Hades II | Indie Roguelike | Early Access | Late-night runs |
-| Stardew Valley | Cozy Farming Sim | ~$15 | Lazy afternoon sessions |
-| Counter-Strike 2 | Competitive FPS | Free-to-Play | Weekend competitive |
-| Time Crisis 4 | Arcade Shooter | ~$20 | Retro arcade energy |
-| Euro Truck Simulator 2 | Relaxing Simulator | ~$19.99 (often on sale) | Sunset cruising |
+| Game | Genre | Price                  | Summer Vibe |
+|------|-------|------------------------|-------------|
+| Hades II | Indie Roguelike | Early Access           | Late-night runs |
+| Stardew Valley | Cozy Farming Sim | ~€15                   | Lazy afternoon sessions |
+| Counter-Strike 2 | Competitive FPS | Free-to-Play           | Weekend competitive |
+| Time Crisis 4 | Arcade Shooter | ~€20                   | Retro arcade energy |
+| Euro Truck Simulator 2 | Relaxing Simulator | ~€19.99 (often on sale) | Sunset cruising |
 
 ### Hades II
 
@@ -163,7 +178,7 @@ After spending a solid chunk of July with the Steam Controller, here's my honest
 ### Where It Falls Short
 
 - **Steam-centric** — Outside of Steam, this controller loses its special sauce. No unique features in Epic, GOG, or other platforms.
-- **€99 is not cheap** — In a market where the Xbox controller is ~$60 and 8BitDo offers great value, the price premium demands justification.
+- **€99 is not cheap** — In a market where the Xbox controller is ~€60 and 8BitDo offers great value, the price premium demands justification.
 - **The trackpad is polarizing** — If you've never used a trackpad on a controller, it takes adjustment. Some hands simply don't work with it.
 - **Availability** — Between the RAM chip shortage squeezing consumer electronics and Valve's own production pace, stock can be spotty. You may need to wait.
 
@@ -177,7 +192,7 @@ The timing hasn't been ideal. The memory chip shortage means stock is spotty and
 
 So, back to where we started: it's a warm July afternoon, the fan is humming, there's an iced drink on the desk, and I'm playing something that doesn't require me to think too hard. The Steam Controller sits in my hands, comfortable and unobtrusive, and for this particular setup — Steam, PC, summer couch — it does exactly what it's supposed to do.
 
-What about you? Are you team Xbox, team DualSense, team 8BitDo, or have you given the Steam Controller a shot? Drop a comment below — I read every one of them.
+Enjoy the rest of the summer everyone, and as always, thanks for reading! 
 
 {{< rawhtml >}}
 <script type="application/ld+json">
