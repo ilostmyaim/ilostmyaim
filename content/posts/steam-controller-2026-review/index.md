@@ -136,12 +136,12 @@ This shortage context is also worth keeping in mind when evaluating that €99 p
 
 Summer is the season for playing games, not benchmarking them. Here are five titles that pair especially well with the Steam Controller, whether it's the trackpad, the Steam Input profiles, or just the general couch-gaming vibe that makes them shine.
 
-| Game | Genre | Price                  | Summer Vibe |
-|------|-------|------------------------|-------------|
-| Hades II | Indie Roguelike | Early Access           | Late-night runs |
-| Stardew Valley | Cozy Farming Sim | ~€15                   | Lazy afternoon sessions |
-| Counter-Strike 2 | Competitive FPS | Free-to-Play           | Weekend competitive |
-| Time Crisis 4 | Arcade Shooter | ~€20                   | Retro arcade energy |
+| Game | Genre | Price                   | Summer Vibe |
+|------|-------|-------------------------|-------------|
+| Hades II | Indie Roguelike | ~€30                    | Late-night runs |
+| Stardew Valley | Cozy Farming Sim | ~€15                    | Lazy afternoon sessions |
+| Counter-Strike 2 | Competitive FPS | Free-to-Play            | Weekend competitive |
+| Time Crisis 4 | Arcade Shooter | ~€20                    | Retro arcade energy |
 | Euro Truck Simulator 2 | Relaxing Simulator | ~€19.99 (often on sale) | Sunset cruising |
 
 ### Hades II
