@@ -3,7 +3,7 @@ title: "Steam Controller 2026 Review vs Xbox, PS5 & 8BitDo"
 subtitle: "Valve's second attempt at the perfect PC controller — a relaxed summer comparison"
 date: 2026-07-14
 lastmod: 2026-07-14
-draft: true
+draft: false
 author: "iLostMyAim"
 description: "Hands-on review of Valve's 2026 Steam Controller. We compare it against Xbox, PS5 DualSense, and 8BitDo controllers — plus 5 games it shines in."
 tags: ["Steam Controller", "PC Gaming", "Controller Review", "Valve", "Gaming Hardware", "Xbox Controller", "8BitDo"]
